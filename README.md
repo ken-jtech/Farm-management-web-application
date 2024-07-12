@@ -1,4 +1,8 @@
 # kombe-farm-app
+![alt text](<Screenshot 2024-07-12 071710.png>)
+![alt text](<Screenshot 2024-07-12 071337.png>) 
+![alt text](<Screenshot 2024-07-12 071306.png>)
+***Note: some services have not been implimented yet eg, Employee management, Formualas, AI Projections, Calender, Animal health and more ***
 
     Instructions to run locally 
 1. Run frontend app using vscode or any prefered IDE of your choice using localhost:3000
