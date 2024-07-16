@@ -142,7 +142,7 @@ function deleteFeeding(user, feedingId) {
   });
 }
 
-function numberOfUsers() {
+/* function numberOfUsers() {
   return instance.get("/public/numberOfUsers");
 }
 
@@ -190,7 +190,7 @@ function getUserMe(user) {
     headers: { Authorization: bearerAuth(user) },
   });
 }
-
+ */
 // -- Axios
 
 const instance = axios.create({

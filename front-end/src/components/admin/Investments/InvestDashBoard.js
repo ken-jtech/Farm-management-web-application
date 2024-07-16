@@ -47,7 +47,7 @@ export const InvestDashBoard = () => {
   useEffect(() => {
     getInvestment();
     setIsLoading(false);
-  }, []);
+  }, [getInvestment]);
   const getInvestment = () => {
     TransactionsApi.getInvestments(user)
       .then((response) => {
@@ -68,7 +68,7 @@ export const InvestDashBoard = () => {
   };
 
   // Each Column Definition results in one Column.
-  const [columnDefs, setColumnDefs] = useState([
+  const [columnDefs] = useState([
     { field: "investmentId", hide: true },
     { field: "type" },
     { field: "date" },
@@ -168,7 +168,7 @@ export const InvestDashBoard = () => {
     floatingFilter: true,
     filter: true,
     flex: 1,
-  }));
+  }), []);
 
   // Example of consuming Grid Event
   const cellClickedListener = useCallback((event) => {
